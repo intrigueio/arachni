@@ -43,14 +43,14 @@ Gem::Specification.new do |s|
 
     s.add_dependency 'awesome_print',       '1.6.1'
 
-    s.add_dependency 'rack',                '1.6.4'
+    s.add_dependency 'rack',                '2.0.3'
 
     # Don't specify version, messes with the packages since they always grab the
     # latest one.
     s.add_dependency 'bundler'
 
-    s.add_dependency 'concurrent-ruby',     '1.0.2'
-    s.add_dependency 'concurrent-ruby-ext', '1.0.2'
+    s.add_dependency 'concurrent-ruby',     '1.0.5'
+    s.add_dependency 'concurrent-ruby-ext', '1.0.5'
 
     # For compressing/decompressing system state archives.
     s.add_dependency 'rubyzip',             '1.2.1'
@@ -59,25 +59,25 @@ Gem::Specification.new do |s|
     s.add_dependency 'http_parser.rb',      '0.6.0'
 
     # HTML report
-    s.add_dependency 'coderay',             '1.1.0'
+    s.add_dependency 'coderay',             '1.1.2'
 
     s.add_dependency 'childprocess',        '0.5.3'
 
     # RPC serialization.
-    s.add_dependency 'msgpack',             '0.7.0'
+    s.add_dependency 'msgpack',             '1.0.0'
 
-    if RUBY_PLATFORM != 'java'
-        # Optimized JSON.
-        s.add_dependency 'oj',              '2.15.0'
-        s.add_dependency 'oj_mimic_json',   '1.0.1'
-    end
+    #if RUBY_PLATFORM != 'java'
+    #    # Optimized JSON.
+    #    s.add_dependency 'oj',              '2.15.0'
+    #    s.add_dependency 'oj_mimic_json',   '1.0.1'
+    #end
 
     # Web server
-    s.add_dependency 'puma',                '2.14.0'
+    s.add_dependency 'puma',                '3.10.0'
 
     # REST API
-    s.add_dependency 'sinatra',             '1.4.6'
-    s.add_dependency 'sinatra-contrib',     '1.4.6'
+    s.add_dependency 'sinatra',             '2.0.0'
+    s.add_dependency 'sinatra-contrib',     '2.0.0'
 
     # RPC client/server implementation.
     s.add_dependency 'arachni-rpc',         '~> 0.2.1.4'
@@ -86,7 +86,7 @@ Gem::Specification.new do |s|
     s.add_dependency 'typhoeus',            '1.0.2'
 
     # Fallback URI parsing and encoding utilities.
-    s.add_dependency 'addressable',         '2.3.6'
+    s.add_dependency 'addressable',         '2.5.2'
 
     # E-mail plugin.
     s.add_dependency 'pony',                '1.11'
@@ -95,7 +95,7 @@ Gem::Specification.new do |s|
     s.add_dependency 'rb-readline',         '0.5.1'
 
     # Markup parsing, for reports and Element::XML.
-    s.add_dependency 'nokogiri',            '1.6.8.1'
+    s.add_dependency 'nokogiri',            '1.8.1'
     # Really fast and lightweight markup parsing, for pages.
     s.add_dependency 'ox',                  '2.4.11'
 
@@ -105,7 +105,7 @@ Gem::Specification.new do |s|
     # Browser support for DOM/JS/AJAX analysis stuff.
     # Lock webdriver, newer versions has issues.
     s.add_dependency 'selenium-webdriver',  '3.0.1'
-    s.add_dependency 'watir-webdriver',     '0.8.0'
+    s.add_dependency 'watir-webdriver',     '0.9.9'
 
     # Markdown to HTML conversion, used by the HTML report for component
     # descriptions.
